@@ -1,1 +1,13 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="]UC0YsrCmSOTtDHP*lU*" x="0" y="0"><statement name="HANDLER"><block type="controls_if" id="=3f.BI.o{/*b;,Z^HC0u"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="ste|I5)}[$yz+of4@^I?"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_light_level" id=".dsVZ4gs*EA_RFO{vfPF"></block></value><value name="B"><shadow type="math_number" id="uv+YFs0GQ8oo6y7W}_ma"><field name="NUM">100</field></shadow></value></block></value><statement name="DO0"><block type="device_play_note" id="r^,{TU*_.Pgq$k-67avJ"><value name="note"><shadow type="device_note" id="b]h0CNC11jX4iaDmcHT."><field name="name">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="Sx.7VhwMX|@(_GgXA$5i"><field name="fraction">BeatFraction.Sixteenth</field></shadow></value></block></statement><statement name="ELSE"><block type="device_play_note" id="}/=$R^4)IMNN9w5IZr:P"><value name="note"><shadow type="device_note" id="[TI_Yb%$C3oGz`qYGt0Z"><field name="name">523</field></shadow></value><value name="duration"><shadow type="device_beat" id="3U5S3eFp?IOrJyO[z)b."><field name="fraction">BeatFraction.Sixteenth</field></shadow></value></block></statement></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="]UC0YsrCmSOTtDHP*lU*" x="0" y="0"><statement name="HANDLER"><block type="input_set_sound_threshold" id="C/_4EW#=ZOGdce-I5|?P"><field name="sound">SoundThreshold.Loud</field><value name="value"><shadow type="math_number_minmax" id="n!g}p(1RA+0?PIWGr)@L"><mutation min="0" max="255" label="Threshold" precision="0"></mutation><field name="SLIDER">25</field></shadow></value></block></statement></block><block type="input_on_sound" id="Fc(;,_oWJk(vS!`/oT[%" x="510" y="44"><field name="sound">DetectedSound.Loud</field><statement name="HANDLER"><block type="device_show_leds" id="bl0t(Fgg]ys8`/C-j,N^"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field></block></statement></block><block type="input_on_sound" id="83I4rMV-wcA=8_;y-7Hc" x="34" y="217"><field name="sound">DetectedSound.Quiet</field><statement name="HANDLER"><block type="device_show_leds" id="W#0?#/]f[=X-%2=2LSBs"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement></block></xml>
